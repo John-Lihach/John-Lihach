@@ -5,7 +5,7 @@
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="stylesheet.css">
 		<style>
-			img {position:absolute; margin:300px 0px 0px 500px;}
+			img {position:absolute;}
 			.child {transition: margin 1s}
 			.child2 {transition: margin 1s}
 			.parent:hover .child2 {margin:0px 0px 0px 230px;}
@@ -13,26 +13,26 @@
 			.parent:hover body {background-color:white}
 			h2 {position:absolute; margin:880 0 0 0; width:99%; font-size:35px; color:black; text-align:center;opacity:.8}
 			body {background-image:url("Photos/bg2.jpg");}
+			@media screen and (min-height: 520px) {h2 {bottom:3}}
+			.logo {margin-left: auto; margin-right:auto; width:470px; height:268px;}
+			.height {position:absolute; top:50%; margin-top:-154px; left:0; width:100%}
 		</style>
 	</head>
 	
 	<body>
-		<div class="parent">
-			<div class="child2"><a href="Videos.html"><img src="Logo/LogoAnimation2.png" alt="eos" style="margin:450px 0px 0px 765px"></div></a>
-			<a href="Videos.html"><img src="Logo/Logo2.png" alt="Vid" style="margin:450px 0px 0px 765px"></a>
-		</div>
-		<div class="parent">
-			<div class="child"><a href="Photos.html"><img src="Logo/LogoAnimation1.png" alt="tos" style="margin:300px 0px 0px 500px"></div></a>
-			<a href="Photos.html"><img src="Logo/Logo1.png" alt="Pho"></a>
+		<div class="height">
+			<div class="logo">
+				<div class="parent">
+					<div class="child2"><a href="Videos.html"><img src="Logo/LogoAnimation2.png" alt="eos" style="margin:150px 0px 0px 265px"></div></a>
+					<a href="Videos.html"><img src="Logo/Logo2.png" alt="Vid" style="margin:150px 0px 0px 265px"></a>
+				</div>
+				<div class="parent">
+					<div class="child"><a href="Photos.html"><img src="Logo/LogoAnimation1.png" alt="tos" style="margin:0px 0px 0px 0px"></div></a>
+					<a href="Photos.html"><img src="Logo/Logo1.png" alt="Pho"></a>
+				</div>
+			</div>
 		</div>
 		<h2>Created by John Lihach, Khalid Alfaraj, Johhny Vaccaro, Safar Alshahrani, Mohammad Alhareky</h2>
 	</body>
 	
 </html>
-
-<!--
-		<img src="Logo2.png" alt="Vid" style="margin:290px 0px 0px 665px" display="none">
-		<img src="Logo1.png" alt="Pho">
-		<img src="LogoAnimation1.png" alt="Pho" class="animation">
-		<p class="pho">Pho</p>
-		<p class="vid">Vid</p>-->
