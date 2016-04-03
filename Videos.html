@@ -7,8 +7,11 @@
 		<style>
 			.videobutton {display:none; position:absolute; margin-left:auto; margin-right:auto; left:0; right:0; bottom:100; color:white; font-weight:bold; background-color:red; width:200; opacity:.8}
 			.video:hover .videobutton {display:inline-block}
-			.video {width:508; height:340;margin: 0 0 30 15; display:inline-block; position:relative}
+			.video {width:508; height:340;margin: 0 0 30 0; display:inline-block; position:relative;}
 			#gallery {text-align:center; position:absolute; left:0; width:100%;}
+			.description {font-weight:bold; height:70%; width:29%; position:fixed; top:85; right:0; display:none;z-index:4;font-size:40; background-color:rgba(0,106,141,.85);overflow:auto; padding-left:1%}
+			th {font-size:30;font-weight:bold}
+			td {border:solid black 2px; width:100%; font-size:25;font-weight:bold}
 		</style>
 	</head>
 	<body>
@@ -47,52 +50,68 @@
 		</div>
 		</br></br></br></br></br></br></br></br></br></br>		
 		<div id="gallery">
+			<div class="description" id="description">
+				<div id="title"></div>
+				<hr>
+				<br/>
+				<table>
+					<tr><th>Comments</th></tr>
+					<tr><td id="tr1"><td></tr>
+					<tr><td id="tr2"><td></tr>
+					<tr><td id="tr3"><td></tr>
+					<tr><td id="tr4"><td></tr>
+					<tr><td id="tr5"><td></tr>
+					<tr><td id="tr6"><td></tr>
+					<tr><td id="tr7"><td></tr>
+					<tr><td id="tr8"><td></tr>
+				</table>
+			</div>
 			<div class="video" id="1div">
-				<iframe src="https://www.youtube.com/embed/PfBVIHgQbYk" allowfullscreen width="500" height="332" class="image" id="1"></iframe>
+				<iframe src="https://www.youtube.com/embed/PfBVIHgQbYk" allowfullscreen width="500" height="332" id="1"></iframe>
 				<div class="videobutton" onclick="enlarge('1','1div')">Click Me to Change Size</div>
 			</div>
 			<div class="video" id="2div">
-				<iframe src="https://www.youtube.com/embed/FIrXpp_Nlt4" allowfullscreen width="500" height="332" class="image" id="2"></iframe>
+				<iframe src="https://www.youtube.com/embed/FIrXpp_Nlt4" allowfullscreen width="500" height="332" id="2"></iframe>
 				<div class="videobutton" onclick="enlarge('2','2div')">Click Me to Change Size</div>
 			</div>
 			<div class="video" id="3div">
-				<iframe src="https://www.youtube.com/embed/yaBpjKdCn3k" allowfullscreen width="500" height="332" class="image" id="3"></iframe>
+				<iframe src="https://www.youtube.com/embed/yaBpjKdCn3k" allowfullscreen width="500" height="332" id="3"></iframe>
 				<div class="videobutton" onclick="enlarge('3','3div')">Click Me to Change Size</div>
 			</div>
 			<div class="video" id="4div">
-				<iframe src="https://www.youtube.com/embed/ipUjysWyUTA" allowfullscreen width="500" height="332" class="image" id="4"></iframe>
+				<iframe src="https://www.youtube.com/embed/ipUjysWyUTA" allowfullscreen width="500" height="332" id="4"></iframe>
 				<div class="videobutton" onclick="enlarge('4','4div')">Click Me to Change Size</div>
 			</div>
 			<div class="video" id="5div">
-				<iframe src="https://www.youtube.com/embed/VVYTzauIb_4" allowfullscreen width="500" height="332" class="image" id="5"></iframe>
+				<iframe src="https://www.youtube.com/embed/VVYTzauIb_4" allowfullscreen width="500" height="332" id="5"></iframe>
 				<div class="videobutton" onclick="enlarge('5','5div')">Click Me to Change Size</div>
 			</div>
 			<div class="video" id="6div">
-				<iframe src="https://www.youtube.com/embed/2XLPmY89cGM" allowfullscreen width="500" height="332" class="image" id="6"></iframe>
+				<iframe src="https://www.youtube.com/embed/2XLPmY89cGM" allowfullscreen width="500" height="332" id="6"></iframe>
 				<div class="videobutton" onclick="enlarge('6','6div')">Click Me to Change Size</div>
 			</div>
 			<div class="video" id="7div">
-				<iframe src="https://www.youtube.com/embed/Ol6-3fAPDxM" allowfullscreen width="500" height="332" class="image" id="7"></iframe>
+				<iframe src="https://www.youtube.com/embed/Ol6-3fAPDxM" allowfullscreen width="500" height="332" id="7"></iframe>
 				<div class="videobutton" onclick="enlarge('7','7div')">Click Me to Change Size</div>
 			</div>
 			<div class="video" id="8div">
-				<iframe src="https://www.youtube.com/embed/C_3d6GntKbk" allowfullscreen width="500" height="332" class="image" id="8"></iframe>
+				<iframe src="https://www.youtube.com/embed/C_3d6GntKbk" allowfullscreen width="500" height="332" id="8"></iframe>
 				<div class="videobutton" onclick="enlarge('8','8div')">Click Me to Change Size</div>
 			</div>
 			<div class="video" id="9div">
-				<iframe src="https://www.youtube.com/embed/KuG_CeEZV6w" allowfullscreen width="500" height="332" class="image" id="9"></iframe>
+				<iframe src="https://www.youtube.com/embed/KuG_CeEZV6w" allowfullscreen width="500" height="332" id="9"></iframe>
 				<div class="videobutton" onclick="enlarge('9','9div')">Click Me to Change Size</div>
 			</div>
 			<div class="video" id="10div">
-				<iframe src="https://www.youtube.com/embed/tV_IhWE4LP0" allowfullscreen width="500" height="332" class="image" id="10"></iframe>
+				<iframe src="https://www.youtube.com/embed/tV_IhWE4LP0" allowfullscreen width="500" height="332" id="10"></iframe>
 				<div class="videobutton" onclick="enlarge('10','10div')">Click Me to Change Size</div>
 			</div>
 			<div class="video" id="11div">
-				<iframe src="https://www.youtube.com/embed/w3ugHP-yZXw" allowfullscreen width="500" height="332" class="image" id="11"></iframe>
+				<iframe src="https://www.youtube.com/embed/w3ugHP-yZXw" allowfullscreen width="500" height="332" id="11"></iframe>
 				<div class="videobutton" onclick="enlarge('11','11div')">Click Me to Change Size</div>
 			</div>
 			<div class="video" id="12div">
-				<iframe src="https://www.youtube.com/embed/nIVU6W3EDcU" allowfullscreen width="500" height="332" class="image" id="12"></iframe>
+				<iframe src="https://www.youtube.com/embed/nIVU6W3EDcU" allowfullscreen width="500" height="332" id="12"></iframe>
 				<div class="videobutton" onclick="enlarge('12','12div')">Click Me to Change Size</div>
 			</div>
 		</div>
