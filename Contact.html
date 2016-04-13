@@ -1,90 +1,85 @@
 <html>
+
 	<head>
 		<title>PhoVid - Contact Us</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="stylesheet.css">
 		<style>
-			.form {float:left; margin:0 0 0 180px; text-align:left; border-left: solid #4770eb 3px; padding: 0 15 0 15}
-			.service {font-weight:bold}
+			.form {margin-left:180; text-align:left; float:left; border-left: solid #4770eb 3px; padding: 0 15 0 15;display:inline-block; color:white}
+			h3 {text-decoration:underline}
+			p {position:absolute; bottom:0; color:white; text-align:center; right:0; left:0}
+			@media screen and (max-height: 800px) {p {position:static; display:inline-block; margin-left:180}}
+			@media screen and (max-width: 1080px) {p {position:static; display:inline-block; margin-left:180}}
 		</style>
 	</head>
+	
 	<body>
-		<div>
-			<div id="logo">
-				<div style="position:absolute;left:0%;bottom:0%">
-					<img src="Logo/Logo2.png" alt="logo" width="200" height="90">
-				</div>
-				<div style="position:absolute;right:0%;top:0%">
-					<img src="Logo/Logo1.png" alt="logo" width="200" height="90">
-				</div>
+		<div id="logo">
+			<div style="position:absolute;left:0%;bottom:0%">
+				<img src="Logo/Logo2.png" alt="logo" width="200" height="90">
 			</div>
+			<div style="position:absolute;right:0%;top:0%">
+				<img src="Logo/Logo1.png" alt="logo" width="200" height="90">
+			</div>
+		</div>
 			
-			
-			<div id="menu_button">
-				<div id="menu_icon"></div>
-				<div class="menu">
-					<h2> 
-						<a href="index.html" class="link">Home</a></br></br></br>
-						<a href="Photos.html" class="link">Photos</a></br></br></br>
-						<a href="Videos.html" class="link">Videos</a></br></br></br>
-						<a href="Contact.html" class="link">Contact</a> </br></br></br>
-						<a href="Store.html" class="link">Store</a>
-					</h2>
-				</div>
+		<div id="menu_button">
+			<div id="menu_icon"></div>
+			<div id="menu">
+				<h2> 
+					<a href="index.html" class="link">Home</a><br/><br/><br/>
+					<a href="Photos.html" class="link">Photos</a><br/><br/><br/>
+					<a href="Videos.html" class="link">Videos</a><br/><br/><br/>
+					<a href="Contact.html" class="link">Contact</a> <br/><br/><br/>
+					<a href="Store.html" class="link">Store</a>
+				</h2>
 			</div>
-			<div id="sorting">
-				<h2>Sign in</h2>
-				<div id="options">
-					<h4>Username:<input type="text" name="username"></h4>
-					<h4>Password:<input type="password" name="password"></h4>
-					<input type="submit" value="Sign in">
-				</div>
+		</div>
+		
+		<div id="sign_in">
+			<h2>Sign in</h2>
+			<div id="options">
+				<h4>Username:<input type="text" name="username"></h4>
+				<h4>Password:<input type="password" name="password"></h4>
+				<input type="submit" value="Sign in">
 			</div>
-			</br>
-			<div id="header">
-				<h1>Contact Us</h1>
-			</div>
-		</div>		
+		</div>
+		<br/>
+		<h1 id="header">Contact Us</h1>
 		
 		<div id="gallery">
-			</br></br></br></br></br></br></br></br></br></br></br></br></br></br>
-			<form class="form" style="color:white">
-				<h3 style="text-decoration:underline;">Send a Message</h3>
-				Name: <input type="text" name="name" id="input" size="25"></br></br>
-				Email: <input type="text" name="email" id="input" size="25"></br></br>
-				Height: <input type="text" name="height" id="input" size="25"></br></br>
-				Weight: <input type="text" name="weight" id="input" size="25"></br></br>
-				Address: <input type="text" name="address" id="input" size="25"></br></br>
+			
+			<form class="form">
+				<h3>Send a Message</h3>
+				Name: <input type="text" name="name" id="input" size="25"><br/><br/>
+				Email: <input type="text" name="email" id="input" size="25"><br/><br/>
+				Height: <input type="text" name="height" id="input" size="25"><br/><br/>
+				Weight: <input type="text" name="weight" id="input" size="25"><br/><br/>
+				Address: <input type="text" name="address" id="input" size="25"><br/><br/>
 				Do you own a home security system? 
 					<input type="radio"  value="Yes"name="security">Yes
-					<input type="radio"  value="No" name="security">No</br></br>
+					<input type="radio"  value="No" name="security">No<br/><br/>
 				Blood Type: <select name="blood_type" id="input">
 								<option>Type A+/A-</option>
 								<option>Type B+/B-</option>
 								<option>Type O+/O-</option>
 								<option>Type AB+/AB-</option>
-							</select></br></br>
+							</select><br/><br/>
 				
-				Message:</br> <textarea name="message" id="email" rows="5" cols="35"></textarea></br></br>
+				Message:<br/> <textarea name="message" id="email" rows="5" cols="35"></textarea><br/><br/>
 				<input type="submit" value="Submit"> <input type="reset">
 			</form>
-			<div class="form" style="float:left; margin:0 0 0 180;color:white">
-				<h3 style="text-decoration:underline">Our Services*</h3>
-				<span class="service">E-mail: </span>PhoVid@phovid.net </br>
-				<span class="service">Phone #:</span> 703-123-4567 </br>
-				<span class="service">Address:</span> 6390 Washington Road </br>
-				<span class="service">P.O. Box:</span> 3622 Arlington VA 88362 </br>
-			</div>
-			<div style="margin:600 0 0 0;color:white">
-				*For business inquiries, please e-mail: PhoVidBusiness@phovid.net or call: 703-987-6543 
+			<div class="form">
+				<h3>Our Services*</h3>
+				<span style="font-weight:bold">E-mail:</span> PhoVid@phovid.net <br/>
+				<span style="font-weight:bold">Phone #:</span> 703-123-4567 <br/>
+				<span style="font-weight:bold">Address:</span> 6390 Washington Road <br/>
+				<span style="font-weight:bold">P.O. Box:</span> 3622 Arlington VA 88362 <br/>
 			</div>
 		</div>
+		
+		<p>*For business inquiries, please e-mail: PhoVidBusiness@phovid.net or call: 703-987-6543</p> 
+		
 	</body>
+	
 </html>
-
-
-
-
-
-
-
