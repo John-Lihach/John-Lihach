@@ -1,60 +1,118 @@
 <html>
+
 	<head>
 		<title>PhoVid - Photos</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="stylesheet.css">
 		<style>			
 			#logo {width:180px}
+			#gallery {text-align:center; position:absolute; left:0; width:100%;}
+			.item_wrapper {box-shadow:5px 5px 25px #000000; border:solid black 2px; transition:border 1s; box-sizing:border-box}
+			.item_wrapper:hover {border:outset white 2px}
 		</style>
+		<script type="text/javascript" src="javascript.js"></script>
 	</head>
-	<body>
-		<div>
-			<div id="logo">
-				<div style="position:absolute;left:0%;bottom:0%">
-					<img src="Logo/Logo2.png" alt="logo" width="200" height="90">
-				</div>
-				<div style="position:absolute;right:0%;top:0%;">
-					<img src="Logo/LogoAnimation3.png" alt="logo" width="388" height="90">
-				</div>
+	
+	<body>	
+		<div id="logo">
+			<div style="position:absolute;left:0%;bottom:0%">
+				<img src="Logo/Logo2.png" alt="logo" width="200" height="90">
 			</div>
-			
-			<div id="menu_button">
-				<div id="menu_icon"></div>
-				<div class="menu">
-					<h2>
-						<a href="index.html" class="link">Home</a></br></br></br>
-						<a href="Photos.html" class="link">Photos</a></br></br></br>
-						<a href="Videos.html" class="link">Videos</a></br></br></br>
-						<a href="Contact.html" class="link">Contact</a> </br></br></br>
-						<a href="Store.html" class="link">Store</a>
-					</h2>
-				</div>
+			<div style="position:absolute;right:0%;top:0%;">
+				<img src="Logo/LogoAnimation3.png" alt="logo" width="388" height="90">
 			</div>
-			
-			<div id="sorting">
-				<h2>Sign in</h2>
-				<div id="options">
-					<h4>Username:<input type="text" name="username"></h4>
-					<h4>Password:<input type="password" name="password"></h4>
-					<input type="submit" value="Sign in">
-				</div>
-			</div>
-			
-		</div>	
-		<div id="gallery">
-			</br></br></br></br></br></br></br></br></br></br>
-			<a href="Photos/bg2.jpg"><img src="Photos/bg2.jpg" alt="Blurry Photo" width="500" height="332" class="image"></a>
-			<a href="Photos/14.jpg"><img src="Photos/14.jpg" alt="Street Light" width="500" height="332" class="image"></a>
-			<a href="Photos/16.jpg"><img src="Photos/16.jpg" alt="Street Light Close Up" width="500" height="332" class="image"></a>
-			<a href="Photos/17.jpg"><img src="Photos/17.jpg" alt="Telephone Pole" width="500" height="332" class="image"></a>
-			<a href="Photos/18.jpg"><img src="Photos/18.jpg" alt="Air&Space Museum" width="500" height="332" class="image"></a>
-			<a href="Photos/19.jpg"><img src="Photos/19.jpg" alt="Smithosian Castle" width="500" height="332" class="image"></a>
-			<a href="Photos/Sloth.jpg"><img src="Photos/Sloth.jpg" alt="Sloth" width="500" height="332" class="image"></a>
-			<a href="Photos/Duck.jpg"><img src="Photos/Duck.jpg" alt="Duck" width="500" height="332" class="image"></a>
-			<a href="Photos/Foxes.jpg"><img src="Photos/Foxes.jpg" alt="Foxes" width="500" height="332" class="image"></a>
-			<a href="Photos/Corgi.jpg"><img src="Photos/Corgi.jpg" alt="Corgi" width="500" height="332" class="image"></a>
-			<a href="Photos/Huskys.gif"><img src="Photos/Huskys.gif" alt="Huskys" width="500" height="332" class="image"></a>
-			<a href="Photos/Lion.jpg"><img src="Photos/Lion.jpg" alt="Lion" width="500" height="332" class="image"></a>
 		</div>
+			
+		<div id="menu_button">
+			<div id="menu_icon"></div>
+			<div id="menu">
+				<h2> 
+					<a href="index.html" class="link">Home</a><br/><br/><br/>
+					<a href="Photos.html" class="link">Photos</a><br/><br/><br/>
+					<a href="Videos.html" class="link">Videos</a><br/><br/><br/>
+					<a href="Contact.html" class="link">Contact</a> <br/><br/><br/>
+					<a href="Store.html" class="link">Store</a>
+				</h2>
+			</div>
+		</div>
+			
+		<div id="sign_in">
+			<h2>Sign in</h2>
+			<div id="options">
+				<h4>Username:<input type="text" name="username"></h4>
+				<h4>Password:<input type="password" name="password"></h4>
+				<input type="submit" value="Sign in">
+			</div>
+		</div>	
+			
+		<div id="gallery">
+			<div id="description">
+				<div id="title"></div>
+				<hr>
+				<br/>
+				<table>
+					<tr><th>Comments</th></tr>
+					<tr><td id="tr1"><td></tr>
+					<tr><td id="tr2"><td></tr>
+					<tr><td id="tr3"><td></tr>
+					<tr><td id="tr4"><td></tr>
+					<tr><td id="tr5"><td></tr>
+					<tr><td id="tr6"><td></tr>
+					<tr><td id="tr7"><td></tr>
+					<tr><td id="tr8"><td></tr>
+				</table>
+			</div>
+			
+			<div class="item_wrapper" id="1div" onclick="enlarge('1','1div','photo')">
+				<img src="Photos/bg2.jpg" alt="Blurry Photo" class="image" id="1">
+			</div>
+			
+			<div class="item_wrapper" id="2div" onclick="enlarge('2','2div','photo')">
+				<img src="Photos/14.jpg" alt="Street Light" class="image" id="2">
+			</div>
+			
+			<div class="item_wrapper" id="3div" onclick="enlarge('3','3div','photo')">
+				<img src="Photos/16.jpg" alt="Street Light Close Up" class="image" id="3">
+			</div>
+			
+			<div class="item_wrapper" id="4div" onclick="enlarge('4','4div','photo')">
+				<img src="Photos/17.jpg" alt="Telephone Pole" class="image" id="4">
+			</div>
+			
+			<div class="item_wrapper" id="5div" onclick="enlarge('5','5div','photo')">
+				<img src="Photos/18.jpg" alt="Air&Space Museum" class="image" id="5">
+			</div>
+						
+			<div class="item_wrapper" id="6div" onclick="enlarge('6','6div','photo')">
+				<img src="Photos/19.jpg" alt="Smithosian Castle" class="image" id="6">
+			</div>
+						
+			<div class="item_wrapper" id="7div" onclick="enlarge('7','7div','photo')">
+				<img src="Photos/Sloth.jpg" alt="Sloth" class="image" id="7">
+			</div>	
+			
+			<div class="item_wrapper" id="8div" onclick="enlarge('8','8div','photo')">
+				<img src="Photos/Duck.jpg" alt="Duck" class="image" id="8">
+			</div>
+			
+			<div class="item_wrapper" id="9div" onclick="enlarge('9','9div','photo')">
+				<img src="Photos/Foxes.jpg" alt="Foxes" class="image" id="9">
+			</div>
+			
+			<div class="item_wrapper" id="10div" onclick="enlarge('10','10div','photo')">
+				<img src="Photos/Corgi.jpg" alt="Corgi" class="image" id="10">
+			</div>
+			
+			<div class="item_wrapper" id="11div" onclick="enlarge('11','11div','photo')">
+				<img src="Photos/Huskys.gif" alt="Huskys" class="image" id="11">
+			</div>	
+			
+			<div class="item_wrapper" id="12div" onclick="enlarge('12','12div','photo')">
+				<img src="Photos/Lion.jpg" alt="Lion" class="image" id="12">
+			</div>		
+		</div>
+		
+		<div id="dim_background"></div>		
 	</body>
+	
 </html>
